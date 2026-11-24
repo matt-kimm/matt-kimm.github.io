@@ -18,7 +18,7 @@ app = FastAPI(title="QuakeWatchBaikal API", version="2.1.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", "https://github.io"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
